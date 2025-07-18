@@ -128,7 +128,7 @@ if st.button("Run Scraper and Generate PPT"):
     service = Service("msedgedriver.exe")
 
         driver = webdriver.Edge(service=service, options=options)
-    driver_2 = webdriver.Edge(service=service, options=options)
+   	driver_2 = webdriver.Edge(service=service, options=options)
 
     try:
         # === YOUR FIXED URL LOGIC ===
