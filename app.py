@@ -127,17 +127,18 @@ if st.button("Run Scraper and Generate PPT"):
     # Path to your msedgedriver.exe in the same folder or provide full path
     service = Service("msedgedriver.exe")
 
-    driver = webdriver.Edge(service=service, options=options)
+        driver = webdriver.Edge(service=service, options=options)
     driver_2 = webdriver.Edge(service=service, options=options)
-	
+
     try:
         # === YOUR FIXED URL LOGIC ===
         driver.get("https://hlag.sharepoint.com/sites/QlikSense/SitePages/Gemini-Transition-Reporting.aspx?web=1#operational-kpis")
         driver_2.get("https://qliksense.hlag.com/sense/app/6c33a525-1a3b-4d63-9d6e-d80c235910a7/sheet/58c38c9b-850a-433e-a671-e142bf439f59/state/analysis")
-	driver.maximize_window()
-	driver_2.maximize_window()
+        driver.maximize_window()
+        driver_2.maximize_window()
         # === Retain your sleep times exactly as provided ===
         time.sleep(60)  # example sleep, replace with your exact timing
+
         
         #from here
 	 try:
