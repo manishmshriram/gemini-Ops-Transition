@@ -127,7 +127,7 @@ if st.button("Run Scraper and Generate PPT"):
     # Path to your msedgedriver.exe in the same folder or provide full path
     service = Service("msedgedriver.exe")
 
-        driver = webdriver.Edge(service=service, options=options)
+	driver = webdriver.Edge(service=service, options=options)
    	driver_2 = webdriver.Edge(service=service, options=options)
 
     try:
